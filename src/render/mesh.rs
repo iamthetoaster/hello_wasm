@@ -10,7 +10,7 @@ pub struct FlatMesh {
 }
 
 impl FlatMesh {
-    pub fn ARROW(gl: &WebGlRenderingContext) -> Self {
+    pub fn arrow(gl: &WebGlRenderingContext) -> Self {
         let shader = Shader::new(
             &gl,
             include_str!("../res/vert2d.glsl"),
@@ -25,6 +25,6 @@ impl FlatMesh {
     }
 
     pub fn render(&self) {
-        
+
     }
 }

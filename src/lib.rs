@@ -68,12 +68,12 @@ pub fn start() -> Result<(), JsValue> {
     let body = document.body().expect("document should have a body");
 
     // Manufacture the element we're gonna append
-    let val = document.create_element("p")?;
-    val.set_text_content(Some("Hello from Rust!"));
+    // let val = document.create_element("p")?;
+    // val.set_text_content(Some("Hello from Rust!"));
 
-    body.append_child(&val)?;
+    // body.append_child(&val)?;
 
-    let arrow = FlatMesh::ARROW(&gl);
+    let arrow = FlatMesh::arrow(&gl);
 
     Ok(())
 }
